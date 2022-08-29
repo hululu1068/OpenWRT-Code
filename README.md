@@ -32,6 +32,11 @@ LAN ip `192.168.123.1`
 修正连接数为`165535`  
 锁定默认主题为`bootstrap`  
 
+## 常用插件
+PassWall 
+git clone -b packages https://github.com/xiaorouji/openwrt-passwall.git openwrt-passwall
+git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git luci-passwall
+
 ## Development
 
 To build your own firmware you need a GNU/Linux, BSD or MacOSX system (case
