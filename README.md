@@ -5,6 +5,8 @@ OpenWrt V21.02.3官方稳定版源码  根据个人需要修改了自定义配�
 version `r16554-1d4dea6d4f`
 
 ## Ubuntu22.04编译工具
+官方建议的工具
+https://openwrt.org/docs/guide-developer/toolchain/install-buildsystem
 ```
 sudo apt update
 sudo apt install build-essential gawk gcc-multilib flex git gettext libncurses5-dev libssl-dev python3-distutils rsync unzip zlib1g-dev
