@@ -24,6 +24,7 @@ sudo apt install -y ack antlr3 asciidoc autoconf automake autopoint binutils bis
   vim wget xmlto xxd zlib1g-dev
 ```
 ```
+# 基本编译命令
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 make menuconfig  
