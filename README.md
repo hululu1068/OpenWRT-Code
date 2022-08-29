@@ -103,4 +103,8 @@ cp ~/xxx/upx-3.96-amd64_linux/upx staging_dir/host/bin
 sed -i 's/1.2022.37/1.2022.37.2/g' feeds/packages/net/smartdns/Makefile
 sed -i 's/5a2559f0648198c290bb8839b9f6a0adab8ebcdc/64e5b326cc53df1fec680cfa28ceec5d8a36fcbc/g' feeds/packages/net/smartdns/Makefile
 sed -i 's/^PKG_MIRROR_HASH/#&/' feeds/packages/net/smartdns/Makefile
+
+# 安装smartdns（必选）
+git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
+# git clone https://github.com/pymumu/smartdns.git package/smartdns
 ```
