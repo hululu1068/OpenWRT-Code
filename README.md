@@ -25,7 +25,6 @@ sudo apt install -y ack antlr3 asciidoc autoconf automake autopoint binutils bis
 ```
 
 
-
 ## 自定义配置
 LAN ip `192.168.123.1`  
 默认时区 `Asia/Shanghai`  
@@ -67,79 +66,27 @@ git clone https://github.com/esirplayground/luci-theme-atmaterial-ColorIcon.git
 # luci-theme-argon
 git clone https://github.com/jerrykuku/luci-theme-argon.git
 ```
-
-
-## Development
-
-To build your own firmware you need a GNU/Linux, BSD or MacOSX system (case
-sensitive filesystem required). Cygwin is unsupported because of the lack of a
-case sensitive file system.
-
-### Requirements
-
-You need the following tools to compile OpenWrt, the package names vary between
-distributions. A complete list with distribution specific packages is found in
-the [Build System Setup](https://openwrt.org/docs/guide-developer/build-system/install-buildsystem)
-documentation.
-
 ```
-gcc binutils bzip2 flex python3 perl make find grep diff unzip gawk getopt
-subversion libz-dev libc-dev rsync which
+# luci-app-aliddns
+git clone https://github.com/pymumu/smartdns.git
 ```
 
-### Quickstart
-
-1. Run `./scripts/feeds update -a` to obtain all the latest package definitions
-   defined in feeds.conf / feeds.conf.default
-
-2. Run `./scripts/feeds install -a` to install symlinks for all obtained
-   packages into package/feeds/
-
-3. Run `make menuconfig` to select your preferred configuration for the
-   toolchain, target system & firmware packages.
-
-4. Run `make` to build your firmware. This will download all sources, build the
-   cross-compile toolchain and then cross-compile the GNU/Linux kernel & all chosen
-   applications for your target system.
-
-### Related Repositories
-
-The main repository uses multiple sub-repositories to manage packages of
-different categories. All packages are installed via the OpenWrt package
-manager called `opkg`. If you're looking to develop the web interface or port
-packages to OpenWrt, please find the fitting repository below.
-
-* [LuCI Web Interface](https://github.com/openwrt/luci): Modern and modular
-  interface to control the device via a web browser.
-
-* [OpenWrt Packages](https://github.com/openwrt/packages): Community repository
-  of ported packages.
-
-* [OpenWrt Routing](https://github.com/openwrt/routing): Packages specifically
-  focused on (mesh) routing.
-
-## Support Information
-
-For a list of supported devices see the [OpenWrt Hardware Database](https://openwrt.org/supported_devices)
-
-### Documentation
-
-* [Quick Start Guide](https://openwrt.org/docs/guide-quick-start/start)
-* [User Guide](https://openwrt.org/docs/guide-user/start)
-* [Developer Documentation](https://openwrt.org/docs/guide-developer/start)
-* [Technical Reference](https://openwrt.org/docs/techref/start)
-
-### Support Community
-
-* [Forum](https://forum.openwrt.org): For usage, projects, discussions and hardware advise.
-* [Support Chat](https://webchat.oftc.net/#openwrt): Channel `#openwrt` on **oftc.net**.
-
-### Developer Community
-
-* [Bug Reports](https://bugs.openwrt.org): Report bugs in OpenWrt
-* [Dev Mailing List](https://lists.openwrt.org/mailman/listinfo/openwrt-devel): Send patches
-* [Dev Chat](https://webchat.oftc.net/#openwrt-devel): Channel `#openwrt-devel` on **oftc.net**.
-
-## License
-
-OpenWrt is licensed under GPL-2.0
+## 编译常见问题
+编译passwall 出现 v2ray-plugin 报错  
+```
+下载upx
+wget https://github.com/upx/upx/releases/download/v3.96/upx-3.96-amd64_linux.tar.xz
+解压
+tar -Jxf upx-3.96-amd64_linux.tar.xz
+进入upx文件夹，赋予执行权限
+chmod +x upx
+将upx相关文件复制到相关文件夹
+cp ~/xxx/upx-3.96-amd64_linux/upx staging_dir/host/bin
+```
+更新默认的smartdns版本
+```
+# HASH值在项目查看 https://github.com/pymumu/smartdns.git
+sed -i 's/1.2022.37/1.2022.37.2/g' feeds/packages/net/smartdns/Makefile
+sed -i 's/5a2559f0648198c290bb8839b9f6a0adab8ebcdc/64e5b326cc53df1fec680cfa28ceec5d8a36fcbc/g' feeds/packages/net/smartdns/Makefile
+sed -i 's/^PKG_MIRROR_HASH/#&/' feeds/packages/net/smartdns/Makefile
+```
