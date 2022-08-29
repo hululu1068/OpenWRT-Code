@@ -4,6 +4,12 @@ OpenWrt V21.02.3官方稳定版源码  根据个人需要修改了自定义配�
 官方仓库地址 https://github.com/openwrt/openwrt.git  
 version `r16554-1d4dea6d4f`
 
+## Ubuntu22.04编译工具
+```
+sudo apt update
+sudo apt install build-essential gawk gcc-multilib flex git gettext libncurses5-dev libssl-dev python3-distutils rsync unzip zlib1g-dev
+```
+
 ## 自定义配置
 LAN ip `192.168.123.1`
 
