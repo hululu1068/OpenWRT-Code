@@ -33,9 +33,41 @@ LAN ip `192.168.123.1`
 锁定默认主题为`bootstrap`  
 
 ## 常用插件
-PassWall 
+```
+# PassWall  
 git clone -b packages https://github.com/xiaorouji/openwrt-passwall.git openwrt-passwall
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git luci-passwall
+```
+```
+# PassWall2
+git clone https://github.com/xiaorouji/openwrt-passwall2.git openwrt-passwall2
+```
+```
+# SSR Plus
+git clone https://github.com/fw876/helloworld.git ssr-plus
+```
+```
+# OpenClash
+git clone https://github.com/vernesong/OpenClash.git
+```
+```
+# AdGuardHome
+https://github.com/rufengsuixing/luci-app-adguardhome.git
+```
+```
+# luci-app-xray
+git clone https://github.com/yichya/luci-app-xray.git
+git clone https://github.com/Mitsuhaxy/luci-i18n-xray-zh-cn.git
+```
+```
+# luci-theme-atmaterial
+git clone https://github.com/esirplayground/luci-theme-atmaterial-ColorIcon.git
+```
+```
+# luci-theme-argon
+git clone https://github.com/jerrykuku/luci-theme-argon.git
+```
+
 
 ## Development
 
