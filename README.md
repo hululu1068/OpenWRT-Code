@@ -28,6 +28,7 @@ sudo apt install -y ack antlr3 asciidoc autoconf automake autopoint binutils bis
 
 ## 自定义配置
 LAN ip `192.168.123.1`
+默认时区 `Asia/Shanghai`
 
 ## Development
 
