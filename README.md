@@ -1,6 +1,7 @@
 ![OpenWrt logo](include/logo.png)
 
 OpenWrt V21.02.3官方稳定版源码  根据个人需要修改了自定义配置，添加了常用插件
+官方仓库地址 https://github.com/openwrt/openwrt.git
 
 ## 自定义配置
 LAN ip `192.168.123.1`
