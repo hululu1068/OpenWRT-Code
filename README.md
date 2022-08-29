@@ -29,6 +29,8 @@ sudo apt install -y ack antlr3 asciidoc autoconf automake autopoint binutils bis
 ## 自定义配置
 LAN ip `192.168.123.1`  
 默认时区 `Asia/Shanghai`
+修正连接数为`165535`
+锁定默认主题为`bootstrap`
 
 ## Development
 
