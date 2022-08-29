@@ -23,6 +23,19 @@ sudo apt install -y ack antlr3 asciidoc autoconf automake autopoint binutils bis
   python-docutils qemu-utils re2c rsync scons squashfs-tools subversion swig texinfo uglifyjs upx-ucl unzip \
   vim wget xmlto xxd zlib1g-dev
 ```
+```
+./scripts/feeds update -a
+./scripts/feeds install -a
+make menuconfig  
+1. make -j8 download V=s 下载dl库（国内请尽量全局科学上网） 
+2. 输入 make -j4 V=s （-j1 后面是线程数。第一次编译推荐用单线程）（虚拟机最好指定线程数）。 
+
+# 用管道将编译日志传送给 tee 命令（需要安装），最终写入到 compile.log 文件里
+make -jN V=s | tee ../compile.log
+
+cat ../compile.log | grep ERROR:
+cat ../compile.log | grep failed
+```
 
 
 ## 自定义配置
