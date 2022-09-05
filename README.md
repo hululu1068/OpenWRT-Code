@@ -65,7 +65,7 @@ git clone https://github.com/vernesong/OpenClash.git
 ```
 ```
 # AdGuardHome
-https://github.com/rufengsuixing/luci-app-adguardhome.git
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
 ```
 ```
 # luci-app-xray
