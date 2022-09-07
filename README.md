@@ -9,7 +9,7 @@ version `r16554-1d4dea6d4f`
 https://openwrt.org/docs/guide-developer/toolchain/install-buildsystem
 ```
 sudo apt update
-sudo apt install build-essential gawk gcc-multilib flex git gettext libncurses5-dev libssl-dev python3-distutils rsync unzip zlib1g-dev
+sudo apt install build-essential gawk gcc-multilib flex git gettext libncurses5-dev libssl-dev python3-distutils rsync unzip zlib1g-dev qemu-utils -y
 ```
 ImmortalWrt建议的工具
 ```
@@ -128,7 +128,7 @@ mv $WORKINGDIR/openwrt-smartdns-master/* $WORKINGDIR/
 rmdir $WORKINGDIR/openwrt-smartdns-master
 rm $WORKINGDIR/master.zip
 
-LUCIBRANCH="Release37.2" #更换此变量
+LUCIBRANCH="master" #更换此变量
 WORKINGDIR="`pwd`/feeds/luci/applications/luci-app-smartdns"
 mkdir $WORKINGDIR -p
 rm $WORKINGDIR/* -fr
