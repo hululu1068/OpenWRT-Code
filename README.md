@@ -53,11 +53,11 @@ git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git luci-passwal
 ```
 ```
 # PassWall2
-git clone https://github.com/xiaorouji/openwrt-passwall2.git openwrt-passwall2
+git clone https://github.com/xiaorouji/openwrt-passwall2.git luci-passwall2
 ```
 ```
 # SSR Plus
-git clone https://github.com/fw876/helloworld.git ssr-plus
+git clone --depth=1 https://github.com/fw876/helloworld.git ssr-plus
 ```
 ```
 # OpenClash
