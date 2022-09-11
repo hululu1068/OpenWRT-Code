@@ -73,16 +73,20 @@ git clone https://github.com/yichya/luci-app-xray.git
 git clone https://github.com/Mitsuhaxy/luci-i18n-xray-zh-cn.git
 ```
 ```
-# luci-theme-atmaterial
-git clone https://github.com/esirplayground/luci-theme-atmaterial-ColorIcon.git
-```
-```
 # luci-theme-argon
 git clone https://github.com/jerrykuku/luci-theme-argon.git
 ```
 ```
 # luci-app-aliddns
 git clone https://github.com/pymumu/smartdns.git
+```
+```
+# luci-app-dockerman
+git clone https://github.com/lisaac/luci-app-dockerman.git
+```
+```
+# luci-theme-atmaterial
+git clone https://github.com/esirplayground/luci-theme-atmaterial-ColorIcon.git
 ```
 
 ## 编译常见问题
