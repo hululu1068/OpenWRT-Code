@@ -61,7 +61,14 @@ git clone --depth=1 https://github.com/fw876/helloworld.git ssr-plus
 ```
 ```
 # OpenClash
-git clone https://github.com/vernesong/OpenClash.git
+mkdir package/luci-app-openclash
+cd package/luci-app-openclash
+git init
+git remote add -f origin https://github.com/vernesong/OpenClash.git
+git config core.sparsecheckout true
+echo "luci-app-openclash" >> .git/info/sparse-checkout
+git pull --depth 1 origin master
+git branch --set-upstream-to=origin/master master
 ```
 ```
 # AdGuardHome
@@ -87,6 +94,10 @@ git clone https://github.com/jerrykuku/luci-theme-argon.git
 ```
 # luci-theme-atmaterial
 git clone https://github.com/esirplayground/luci-theme-atmaterial-ColorIcon.git
+```
+```
+# luci-theme-neobird
+git clone https://github.com/thinktip/luci-theme-neobird.git
 ```
 
 ## 编译常见问题
