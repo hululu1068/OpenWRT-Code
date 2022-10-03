@@ -101,6 +101,11 @@ git clone https://github.com/thinktip/luci-theme-neobird.git
 ```
 
 ## 编译常见问题
+开启ipv6支持
+```
+make menuconfig——extra packages——ipv6helper
+make menuconfig——NetWork——Firewall——ip6tables——ip6tables-extra & ip6tables-mod-nat
+```
 编译passwall 出现 v2ray-plugin 报错  
 ```
 下载upx
