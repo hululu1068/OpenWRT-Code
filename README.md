@@ -174,7 +174,7 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 ```
 sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=5.19/g' target/linux/x86/Makefile
 ```
-旁路由模式，如使用`Splice`流控，建议关闭系统的`ip转发`   
+旁路由模式，如使用`xtls-rprx-splice`流控模式，建议关闭系统的`ip转发`   
 参见https://github.com/XTLS/Xray-core/discussions/59
 ```
 vi /etc/sysctl.d/10-default.conf
