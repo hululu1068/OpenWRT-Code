@@ -58,6 +58,11 @@ git clone https://github.com/xiaorouji/openwrt-passwall2.git luci-passwall2
 ```
 # SSR Plus
 git clone --depth=1 https://github.com/fw876/helloworld.git ssr-plus
+
+# 对于 OpenWrt 21.02 或更低版本,必须手动将 Golang 工具链升级到1.18或更高版本才能编译 Xray-core。
+./scripts/feeds update packages
+rm -rf feeds/packages/lang/golang
+svn co https://github.com/openwrt/packages/branches/openwrt-22.03/lang/golang feeds/packages/lang/golang
 ```
 ```
 # OpenClash
