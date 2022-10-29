@@ -93,6 +93,10 @@ git clone https://github.com/pymumu/smartdns.git
 git clone https://github.com/lisaac/luci-app-dockerman.git
 ```
 ```
+# luci-app-netdata
+git clone https://github.com/sirpdboy/luci-app-netdata.git
+```
+```
 # luci-theme-argon
 git clone https://github.com/jerrykuku/luci-theme-argon.git
 ```
