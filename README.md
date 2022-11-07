@@ -45,6 +45,13 @@ LAN ip `192.168.123.1`
 修正连接数为`165535`  
 锁定默认主题为`bootstrap`  
 
+## 添加三方插件
+```
+# 添加到'openwrt'目录下的'feeds.conf.default'文件中
+src-git kenzo https://github.com/kenzok8/openwrt-packages
+src-git small https://github.com/kenzok8/small
+```
+
 ## 常用插件
 ```
 # PassWall  
@@ -182,6 +189,13 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 更改Linux内核（可选）
 ```
 sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=5.19/g' target/linux/x86/Makefile
+```
+修改默认主题（LEDE）
+```
+lede/feeds/luci/collections/luci/Makefile文件更改默认主题
+lede/feeds/luci/collections/luci-ssl-nginx/Makefile
+lede/feeds/luci/collections/luci-ssl-openssl/Makefile
+这三个文件都要修改默认主题名字，不然后面编译可能会报错
 ```
 旁路由模式，如使用`xtls-rprx-splice`流控模式，建议关闭系统的`ip转发`   
 参见https://github.com/XTLS/Xray-core/discussions/59
