@@ -1,0 +1,349 @@
+
+config shunt_rules 'DirectPrivate'
+	option network 'tcp,udp'
+	option remarks 'Direct/Private'
+	option ip_list 'geoip:private
+192.168.123.0/24
+192.168.31.0/24
+192.168.1.0/24
+114.114.114.114
+114.114.115.115
+223.5.5.5
+223.6.6.6
+119.29.29.29
+180.76.76.76
+1.2.4.8'
+	option domain_list 'geosite:private'
+
+config shunt_rules 'ADLite'
+	option domain_list 'geosite:category-ads'
+	option network 'tcp,udp'
+	option remarks 'ADLite'
+
+config shunt_rules 'BT'
+	option remarks 'BT'
+	option protocol 'bittorrent'
+	option network 'tcp,udp'
+    option domain_list 'regexp:\.aria2c.*\.com$
+regexp:\.BitComet.*\.com$
+regexp:\.fdm.*\.com$
+regexp:\.NetTransport.*\.com$
+regexp:\.qbittorrent.*\.com$
+regexp:\.Thunder.*\.com$
+regexp:\.Transmission.*\.com$
+regexp:\.transmission.*\.com$
+regexp:\.transmission-daemon.*\.com$
+regexp:\.transmission-qt.*\.com$
+regexp:\.uTorrent.*\.com$
+regexp:\.WebTorrent.*\.com$
+regexp:\.Folx.*\.com$'
+
+config shunt_rules 'MyDirect'
+	option network 'tcp,udp'
+	option remarks 'MyDirect'
+	option domain_list 'sanv.org
+right.com.cn
+dyndns.com
+api.webtest.net
+ip.istatmenus.app
+domain:istatmenus.app
+domain:skk.moe
+api.ipify.org
+ip.3322.net
+ip111.cn
+ipip.net
+domain:zerotier.com
+domain:notion.so
+domain:bitwarden.com
+domain:parallels.com
+geosite:oracle
+domain:oracle.com
+domain:oraclecloud.com
+regexp:\.orcale.*\.com
+geosite:sohu
+geosite:aws
+geosite:tld-cn'
+
+config shunt_rules 'Apple'
+	option network 'tcp,udp'
+	option remarks 'Apple+'
+	option domain_list 'domain:icloud.com
+domain:icloud-content.com
+domain:cdn-apple.com
+geosite:apple-cn
+geosite:apple-dev
+geosite:apple-update
+geosite:icloud
+regexp:\.apple.*\.com$
+regexp:\.icloud.*\.com$'
+
+config shunt_rules 'GoogleCN'
+	option network 'tcp,udp'
+	option remarks 'Google-CN'
+	option domain_list 'geosite:google-cn
+geosite:google-scholar'
+
+config shunt_rules 'YoutubeNetflix'
+	option network 'tcp,udp'
+	option ip_list 'geoip:netflix'
+	option remarks 'Youtube/Netflix/Disney+'
+	option domain_list 'geosite:youtube
+regexp:\.youtube.*\.com$
+domain:yimg.com
+domain:googlevideo.com
+geosite:netflix
+geosite:disney
+geosite:hulu
+geosite:hbo
+geosite:primevideo'
+
+config shunt_rules 'MyProxy'
+	option network 'tcp,udp'
+	option domain_list 'domain:github.com
+geosite:github
+geosite:google
+geosite:facebook
+geosite:twitter
+geosite:telegram
+geosite:instagram
+geosite:line
+geosite:whatsapp
+geosite:tumblr
+domain:v2rayssr.com'
+	option remarks 'MyProxy'
+	option ip_list 'geoip:google
+geoip:facebook
+geoip:twitter
+geoip:telegram'
+
+config shunt_rules 'MicrosoftSteam'
+	option network 'tcp,udp'
+	option remarks 'Microsoft/Steam…'
+	option domain_list 'onedrive.live.com
+api.steampowered.com
+regexp:\.cm.steampowered.com$
+regexp:\.steamserver.net$
+domain:microsoft.com
+domain:bing.com
+domain:live.com
+domain:office.com
+geosite:microsoft
+geosite:onedrive
+geosite:bing
+geosite:azure
+geosite:steam@cn
+geosite:category-games@cn'
+	option ip_list '103.10.124.0/24
+103.10.125.0/24
+103.28.54.0/24
+146.66.152.0/24
+146.66.155.0/24
+153.254.86.0/24
+155.133.224.0/23
+155.133.226.0/24
+155.133.227.0/24
+155.133.230.0/24
+155.133.232.0/24
+155.133.233.0/24
+155.133.234.0/24
+155.133.236.0/23
+155.133.238.0/24
+155.133.239.0/24
+155.133.240.0/23
+155.133.245.0/24
+155.133.246.0/24
+155.133.248.0/24
+155.133.249.0/24
+155.133.250.0/24
+155.133.251.0/24
+155.133.252.0/24
+155.133.253.0/24
+155.133.254.0/24
+155.133.255.0/24
+162.254.192.0/24
+162.254.193.0/24
+162.254.194.0/23
+162.254.195.0/24
+162.254.196.0/24
+162.254.197.0/24
+162.254.198.0/24
+162.254.199.0/24
+185.25.182.0/24
+185.25.183.0/24
+190.217.33.0/24
+192.69.96.0/22
+205.185.194.0/24
+205.196.6.0/24
+208.64.200.0/24
+208.64.201.0/24
+208.64.202.0/24
+208.64.203.0/24
+208.78.164.0/22'
+
+config shunt_rules 'CDN'
+	option remarks 'CloudFlare/CloudFront/Fastly'
+	option network 'tcp,udp'
+	option domain_list 'domain:cloudflare.com
+domain:cloudflare.net
+domain:cloudflare-dns.com
+domain:workers.dev
+domain:argotunnel.com
+domain:sogoucdn.com
+domain:wangsu.com
+geosite:aliyun
+geosite:cdn77
+geosite:jsdelivr
+geosite:vercel'
+	option ip_list 'geoip:cloudflare
+geoip:cloudfront
+geoip:fastly'
+
+config shunt_rules 'ProxyOutCN'
+	option network 'tcp,udp'
+	option remarks 'Geolocation-!cn'
+	option domain_list 'geosite:geolocation-!cn'
+
+config shunt_rules 'ChinaCN'
+	option network 'tcp,udp'
+	option ip_list 'geoip:cn'
+	option domain_list 'geosite:cn'
+	option remarks 'ChinaCN'
+
+config shunt_rules 'QUIC'
+	option remarks 'QUIC'
+	option port '80,443'
+	option network 'udp'
+
+config shunt_rules 'UDP'
+	option remarks 'UDP'
+	option network 'udp'
+
+config global
+	option socks_enabled '0'
+	option dns_query_strategy 'UseIPv4'
+	option loglevel 'error'
+	option direct_dns_protocol 'udp'
+	option direct_dns '127.0.0.1:6666'
+	option remote_dns_protocol 'udp'
+	option remote_dns '127.0.0.1:7777'
+	option dns_hosts 'cloudflare-dns.com 1.1.1.1
+dns.google.com 8.8.8.8'
+	option localhost_proxy '1'
+	option node 'myshunt'
+	option close_log '0'
+	option enabled '0'
+
+config global_delay
+	option auto_on '0'
+	option start_daemon '1'
+	option start_delay '1'
+
+config global_forwarding
+	option udp_no_redir_ports 'disable'
+	option tcp_redir_ports '22,25,53,143,465,587,853,993,995,80,443'
+	option udp_redir_ports '1:65535'
+	option accept_icmp '0'
+	option ipv6_tproxy '0'
+	option sniffing '1'
+	option route_only '0'
+	option tcp_proxy_way 'tproxy'
+	option tcp_no_redir_ports '22,53,853,3389,1181'
+
+config global_other
+	option nodes_ping 'auto_ping tcping'
+
+config global_rules
+	option geosite_update '1'
+	option geoip_update '1'
+	option v2ray_location_asset '/usr/share/v2ray/'
+	option auto_update '1'
+	option week_update '5'
+	option time_update '8'
+
+config global_app
+	option v2ray_file '/usr/bin/v2ray'
+	option xray_file '/usr/bin/xray'
+	option brook_file '/usr/bin/brook'
+	option hysteria_file '/usr/bin/hysteria'
+
+config global_subscribe
+	option subscribe_proxy '0'
+	option filter_keyword_mode '0'
+	option ss_aead_type 'shadowsocks-libev'
+
+config auto_switch
+	option enable '0'
+	option testing_time '1'
+	option connect_timeout '3'
+	option retry_num '3'
+	option shunt_logic '1'
+
+config nodes 'myshunt'
+	option remarks '分流总节点'
+	option type 'Xray'
+	option protocol '_shunt'
+	option Direct '_direct'
+	option AD 'nil'
+	option BT '_direct'
+	option TVB 'nil'
+	option China '_direct'
+	option QUIC '_blackhole'
+	option UDP 'nil'
+	option domainMatcher 'hybrid'
+	option DirectPrivate '_direct'
+	option ADLite '_blackhole'
+	option Netflix 'c9cfa3ccb34c4985a46b9e03159b8f39'
+	option Netflix_proxy_tag 'nil'
+	option AppleMicrosoftSteam '_direct'
+	option GoogleCN 'nil'
+	option GooglePlus_proxy_tag 'nil'
+	option Proxy_proxy_tag 'nil'
+	option main_node 'nil'
+	option GooglePlus '0ce8c7429b504632b0df286f75734033'
+	option Proxy '0ce8c7429b504632b0df286f75734033'
+	option ChinaCN '_direct'
+	option CDN '_direct'
+	option MyDirect '_direct'
+	option Apple '_direct'
+	option MicrosoftSteam '_direct'
+	option YoutubeNetflix_proxy_tag 'nil'
+	option MyProxy_proxy_tag 'nil'
+	option ProxyOutCN_proxy_tag 'nil'
+	option domainStrategy 'IPIfNonMatch'
+	option YoutubeNetflix 'd6ba68a4eb884194b0ff5e51db097e82'
+	option MyProxy 'cdf4969a974a4aea9efb393f97ed5938'
+	option ProxyOutCN 'cdf4969a974a4aea9efb393f97ed5938'
+	option default_node 'd6ba68a4eb884194b0ff5e51db097e82'
+
+config nodes 'd6ba68a4eb884194b0ff5e51db097e82'
+	option remarks '我的节点1'
+	option type 'Xray'
+	option protocol 'vmess'
+	option address 'www.baidu.com'
+	option port '443'
+	option security 'none'
+	option uuid '1111-2222-3333-4444-5555'
+	option tls '1'
+	option alpn 'default'
+	option tls_serverName 'www.baidu.com'
+	option tls_allowInsecure '1'
+	option fingerprint 'disable'
+	option transport 'tcp'
+	option tcp_guise 'none'
+
+config nodes 'cdf4969a974a4aea9efb393f97ed5938'
+	option remarks '我的节点2'
+	option type 'V2ray'
+	option protocol 'vmess'
+	option address 'www.qq.com'
+	option port '443'
+	option security 'none'
+	option uuid '1111-2222-3333-4444-5555'
+	option tls '1'
+	option alpn 'default'
+	option tls_serverName 'www.qq.com'
+	option tls_allowInsecure '1'
+	option transport 'tcp'
+	option tcp_guise 'none'
+
+
