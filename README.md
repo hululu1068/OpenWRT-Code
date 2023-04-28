@@ -65,6 +65,8 @@ git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git luci-passwal
 # PassWall2
 git clone https://github.com/xiaorouji/openwrt-passwall2.git luci-passwall2
 ```
+<img width="614" alt="image" src="https://user-images.githubusercontent.com/68652362/235070766-119f5017-e07e-4295-93ec-2145a176ebc7.png">
+
 ```
 # SSR Plus
 git clone --depth=1 https://github.com/fw876/helloworld.git ssr-plus
@@ -74,6 +76,8 @@ git clone --depth=1 https://github.com/fw876/helloworld.git ssr-plus
 rm -rf feeds/packages/lang/golang
 svn co https://github.com/openwrt/packages/branches/openwrt-22.03/lang/golang feeds/packages/lang/golang
 ```
+<img width="633" alt="image" src="https://user-images.githubusercontent.com/68652362/235071001-da7a5bf1-9490-48da-a95c-94cb8fb63758.png">
+
 ```
 # OpenClash
 mkdir package/luci-app-openclash
