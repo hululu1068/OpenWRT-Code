@@ -12,7 +12,10 @@ sudo apt update
 sudo apt install build-essential clang flex bison g++ gawk gcc-multilib gettext \
 git libncurses5-dev libssl-dev python3-distutils rsync unzip zlib1g-dev \
 file wget qemu-utils
-# ARM版的机器将`gcc-multilib`替换为`gcc-arm-linux-gnueabihf`
+```
+```
+ARM64的机器将 gcc-multilib 替换为 gcc-arm-linux-gnueabihf
+参考 https://github.com/coolsnowwolf/lede/issues/8384#issuecomment-1529645781
 ```
 ImmortalWrt建议的工具
 ```
