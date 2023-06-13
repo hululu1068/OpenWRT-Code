@@ -99,7 +99,7 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
 ```
 # luci-app-xray
 git clone https://github.com/yichya/luci-app-xray.git
-git clone https://github.com/Mitsuhaxy/luci-i18n-xray-zh-cn.git
+git clone https://github.com/xiechangan123/luci-i18n-xray-zh-cn.git
 ```
 ```
 # luci-app-aliddns
