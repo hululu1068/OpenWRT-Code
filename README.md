@@ -61,12 +61,12 @@ src-git small https://github.com/kenzok8/small
 ## 常用插件
 ```
 # PassWall  
-git clone -b packages https://github.com/xiaorouji/openwrt-passwall.git openwrt-passwall
-git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git luci-passwall
+git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall-packages.git passwall_packages
+git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall.git luci-passwall
 ```
 ```
 # PassWall2
-git clone https://github.com/xiaorouji/openwrt-passwall2.git luci-passwall2
+git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall2.git luci-passwall2
 ```
 <img width="614" alt="image" src="https://user-images.githubusercontent.com/68652362/235070766-119f5017-e07e-4295-93ec-2145a176ebc7.png">
 
@@ -102,6 +102,11 @@ git clone https://github.com/yichya/luci-app-xray.git
 git clone https://github.com/xiechangan123/luci-i18n-xray-zh-cn.git
 ```
 ```
+# luci-app-dae (https://github.com/daeuniverse/dae.git)
+git clone https://github.com/sbwml/luci-app-dae package/dae
+git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+```
+```
 # luci-app-aliddns
 git clone https://github.com/pymumu/smartdns.git
 ```
@@ -114,14 +119,13 @@ git clone https://github.com/lisaac/luci-app-dockerman.git
 git clone https://github.com/sirpdboy/luci-app-netdata.git
 ```
 ```
+# 主题
 # luci-theme-argon
 git clone https://github.com/jerrykuku/luci-theme-argon.git
-```
-```
+
 # luci-theme-atmaterial
 git clone https://github.com/esirplayground/luci-theme-atmaterial-ColorIcon.git
-```
-```
+
 # luci-theme-neobird
 git clone https://github.com/thinktip/luci-theme-neobird.git
 ```
