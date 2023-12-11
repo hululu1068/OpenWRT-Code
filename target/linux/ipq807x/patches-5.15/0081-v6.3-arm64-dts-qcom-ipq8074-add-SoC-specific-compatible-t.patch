@@ -1,0 +1,28 @@
+From 36e830a5656d6c22110c5dcffb611fc69a57a269 Mon Sep 17 00:00:00 2001
+From: Robert Marko <robimarko@gmail.com>
+Date: Mon, 14 Nov 2022 20:47:34 +0100
+Subject: [PATCH] arm64: dts: qcom: ipq8074: add SoC specific compatible to
+ MDIO
+
+Add the newly documented SoC compatible to MDIO in order to be able to
+validate clocks for it.
+
+Signed-off-by: Robert Marko <robimarko@gmail.com>
+Acked-by: Krzysztof Kozlowski <krzysztof.kozlowski@linaro.org>
+Signed-off-by: Bjorn Andersson <andersson@kernel.org>
+Link: https://lore.kernel.org/r/20221114194734.3287854-5-robimarko@gmail.com
+---
+ arch/arm64/boot/dts/qcom/ipq8074.dtsi | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--- a/arch/arm64/boot/dts/qcom/ipq8074.dtsi
++++ b/arch/arm64/boot/dts/qcom/ipq8074.dtsi
+@@ -254,7 +254,7 @@
+ 		};
+ 
+ 		mdio: mdio@90000 {
+-			compatible = "qcom,ipq4019-mdio";
++			compatible = "qcom,ipq8074-mdio", "qcom,ipq4019-mdio";
+ 			reg = <0x00090000 0x64>;
+ 			#address-cells = <1>;
+ 			#size-cells = <0>;

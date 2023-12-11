@@ -1,0 +1,12 @@
+diff --git a/src/hsl/phy/hsl_phy.c b/src/hsl/phy/hsl_phy.c
+index 2fd9d7bf..35419491 100755
+--- a/src/hsl/phy/hsl_phy.c
++++ b/src/hsl/phy/hsl_phy.c
+@@ -53,6 +53,7 @@
+ #include "sw.h"
+ #include "ssdk_plat.h"
+ #include "hsl_port_prop.h"
++#include <linux/if_bridge.h>
+ 
+ phy_info_t *phy_info[SW_MAX_NR_DEV] = {0};
+ a_uint32_t port_bmp[SW_MAX_NR_DEV] = {0};
