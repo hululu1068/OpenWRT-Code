@@ -1,0 +1,139 @@
+CONFIG_TARGET_ramips=y
+CONFIG_TARGET_ramips_mt7621=y
+CONFIG_TARGET_ramips_mt7621_DEVICE_xiaomi_mi-router-ac2100=y
+CONFIG_BIND_ENABLE_DOH=y
+CONFIG_IMAGEOPT=y
+CONFIG_KERNEL_BUILD_DOMAIN="PVE-Debian12"
+CONFIG_KERNEL_BUILD_USER="SmartRouter"
+CONFIG_LUCI_SRCDIET=y
+CONFIG_PACKAGE_TAR_BZIP2=y
+CONFIG_PACKAGE_TAR_GZIP=y
+CONFIG_PACKAGE_TAR_POSIX_ACL=y
+CONFIG_PACKAGE_TAR_XATTR=y
+CONFIG_PACKAGE_TAR_XZ=y
+CONFIG_PACKAGE_TAR_ZSTD=y
+CONFIG_PACKAGE_bash=y
+CONFIG_PACKAGE_bind-check=y
+CONFIG_PACKAGE_bind-ddns-confgen=y
+CONFIG_PACKAGE_bind-dig=y
+CONFIG_PACKAGE_bind-dnssec=y
+CONFIG_PACKAGE_bind-host=y
+CONFIG_PACKAGE_bind-libs=y
+CONFIG_PACKAGE_bind-nslookup=y
+CONFIG_PACKAGE_bind-rndc=y
+CONFIG_PACKAGE_bind-tools=y
+CONFIG_PACKAGE_bzip2=y
+CONFIG_PACKAGE_cfdisk=y
+# CONFIG_PACKAGE_ddns-scripts is not set
+# CONFIG_PACKAGE_ddns-scripts_aliyun is not set
+# CONFIG_PACKAGE_ddns-scripts_dnspod is not set
+# CONFIG_PACKAGE_etherwake is not set
+CONFIG_PACKAGE_ethtool-full=y
+CONFIG_PACKAGE_grep=y
+CONFIG_PACKAGE_htop=y
+CONFIG_PACKAGE_iperf3=y
+CONFIG_PACKAGE_jq=y
+CONFIG_PACKAGE_kmod-crypto-crc32c=y
+CONFIG_PACKAGE_kmod-crypto-kpp=y
+CONFIG_PACKAGE_kmod-crypto-lib-chacha20=y
+CONFIG_PACKAGE_kmod-crypto-lib-chacha20poly1305=y
+CONFIG_PACKAGE_kmod-crypto-lib-curve25519=y
+CONFIG_PACKAGE_kmod-crypto-lib-poly1305=y
+CONFIG_PACKAGE_kmod-lib-crc32c=y
+# CONFIG_PACKAGE_kmod-nf-conntrack-netlink is not set
+CONFIG_PACKAGE_kmod-nf-log6=y
+CONFIG_PACKAGE_kmod-nf-nat6=y
+CONFIG_PACKAGE_kmod-nf-reject6=y
+CONFIG_PACKAGE_kmod-nft-core=y
+CONFIG_PACKAGE_kmod-nft-nat=y
+CONFIG_PACKAGE_kmod-nft-nat6=y
+CONFIG_PACKAGE_kmod-nft-offload=y
+CONFIG_PACKAGE_kmod-nft-tproxy=y
+CONFIG_PACKAGE_kmod-udptunnel4=y
+CONFIG_PACKAGE_kmod-udptunnel6=y
+CONFIG_PACKAGE_kmod-wireguard=y
+CONFIG_PACKAGE_libacl=y
+CONFIG_PACKAGE_libattr=y
+CONFIG_PACKAGE_libblkid=y
+CONFIG_PACKAGE_libbz2=y
+CONFIG_PACKAGE_libcap=y
+CONFIG_PACKAGE_libcbor=y
+CONFIG_PACKAGE_libeudev=y
+CONFIG_PACKAGE_libfdisk=y
+CONFIG_PACKAGE_libfido2=y
+CONFIG_PACKAGE_libiperf3=y
+CONFIG_PACKAGE_liblzma=y
+CONFIG_PACKAGE_libmount=y
+CONFIG_PACKAGE_libncurses=y
+CONFIG_PACKAGE_libpcap=y
+CONFIG_PACKAGE_libpcre2=y
+CONFIG_PACKAGE_libqrencode=y
+CONFIG_PACKAGE_libreadline=y
+CONFIG_PACKAGE_libsmartcols=y
+CONFIG_PACKAGE_liburcu=y
+CONFIG_PACKAGE_libuv=y
+CONFIG_PACKAGE_libwebsockets-full=y
+CONFIG_PACKAGE_libzstd=y
+CONFIG_PACKAGE_lsblk=y
+# CONFIG_PACKAGE_luci-app-accesscontrol is not set
+# CONFIG_PACKAGE_luci-app-arpbind is not set
+# CONFIG_PACKAGE_luci-app-autoreboot is not set
+# CONFIG_PACKAGE_luci-app-ddns is not set
+# CONFIG_PACKAGE_luci-app-nlbwmon is not set
+# CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
+# CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
+CONFIG_PACKAGE_luci-app-smartdns=y
+CONFIG_PACKAGE_luci-app-ttyd=y
+CONFIG_PACKAGE_luci-app-udpxy=y
+# CONFIG_PACKAGE_luci-app-upnp is not set
+# CONFIG_PACKAGE_luci-app-vlmcsd is not set
+# CONFIG_PACKAGE_luci-app-vsftpd is not set
+CONFIG_PACKAGE_luci-app-wireguard=y
+# CONFIG_PACKAGE_luci-app-wol is not set
+CONFIG_PACKAGE_luci-i18n-smartdns-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-udpxy-zh-cn=y
+CONFIG_PACKAGE_luci-i18n-wireguard-zh-cn=y
+CONFIG_PACKAGE_luci-proto-wireguard=y
+# CONFIG_PACKAGE_miniupnpd is not set
+CONFIG_PACKAGE_nano=y
+# CONFIG_PACKAGE_nlbwmon is not set
+CONFIG_PACKAGE_openssh-keygen=y
+CONFIG_PACKAGE_openssh-sftp-server=y
+CONFIG_PACKAGE_qrencode=y
+CONFIG_PACKAGE_smartdns=y
+CONFIG_PACKAGE_tar=y
+CONFIG_PACKAGE_tcpdump=y
+CONFIG_PACKAGE_terminfo=y
+CONFIG_PACKAGE_ttyd=y
+# CONFIG_PACKAGE_uboot-envtools is not set
+CONFIG_PACKAGE_udpxy=y
+CONFIG_PACKAGE_vim-full=y
+# CONFIG_PACKAGE_vlmcsd is not set
+# CONFIG_PACKAGE_vsftpd-alt is not set
+CONFIG_PACKAGE_which=y
+CONFIG_PACKAGE_wireguard-tools=y
+# CONFIG_PACKAGE_wol is not set
+CONFIG_PACKAGE_xz=y
+CONFIG_PACKAGE_xz-utils=y
+CONFIG_PACKAGE_yq=y
+# CONFIG_PER_FEED_REPO is not set
+CONFIG_VERSIONOPT=y
+CONFIG_VERSION_BUG_URL=""
+CONFIG_VERSION_CODE="20240820"
+CONFIG_VERSION_CODE_FILENAMES=y
+CONFIG_VERSION_DIST="Mi"
+CONFIG_VERSION_FILENAMES=y
+CONFIG_VERSION_HOME_URL=""
+CONFIG_VERSION_HWREV=""
+CONFIG_VERSION_MANUFACTURER=""
+CONFIG_VERSION_MANUFACTURER_URL=""
+CONFIG_VERSION_NUMBER="AC2100"
+CONFIG_VERSION_PRODUCT=""
+CONFIG_VERSION_REPO="https://downloads.openwrt.org/snapshots"
+CONFIG_VERSION_SUPPORT_URL=""
+CONFIG_ZSTD_OPTIMIZE_O3=y
+CONFIG_PACKAGE_libpcre=y
+CONFIG_PACKAGE_openssl-util=y
+CONFIG_PACKAGE_wget-ssl=y
+# CONFIG_PCRE_JIT_ENABLED is not set

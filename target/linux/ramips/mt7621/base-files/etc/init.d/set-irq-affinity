@@ -1,0 +1,28 @@
+#!/bin/sh /etc/rc.common
+
+START=99
+
+set_rps() {
+    local dev="$1"
+    local mask="$2"
+    [ -e "/sys/class/net/$dev/queues/rx-0/rps_cpus" ] && echo "$mask" > "/sys/class/net/$dev/queues/rx-0/rps_cpus"
+}
+
+start() {
+    local irq
+    local mask=4
+
+    for irq in $(grep -E "mt|ra" /proc/interrupts | cut -d: -f1 | tr -d ' '); do
+        echo "$mask" > "/proc/irq/$irq/smp_affinity"
+        [ "$mask" = "4" ] && mask=8 || mask=4
+    done
+
+    # RPS -> CPU0 + CPU1
+    set_rps eth0 3
+    set_rps ra0 3
+    set_rps rai0 3
+    set_rps apcli0 3
+    set_rps apclii0 3
+    set_rps wlan0 3
+    set_rps wlan1 3
+}
